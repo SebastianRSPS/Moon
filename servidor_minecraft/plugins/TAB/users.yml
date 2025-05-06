@@ -1,7 +1,36 @@
 _NEZNAMY_:
-  tabprefix: "&6&lTAB&r &a"
-  tagprefix: "&6&lTAB&r &a"
-  abovename: "&bOh look, 3 lines of text !"
-  belowname: "&eThere's only one plugin out there supporting it"
-237d8b55-3f97-4749-aa60-e9fe97b45062: # my online uuid
-  tabsuffix: " &b&lVerified"
+  tabprefix: '&6&lTAB Author &a'
+  tagprefix: '&6&lTAB &r&a'
+  abovename: '&bOh look, 3 lines of text !'
+  belowname: '&eThere''s only one plugin out there supporting it'
+per-world: {}
+odioaflowsinho:
+  tabsuffix: §8 『&#CED88F12❆§8』
+ihaveflow:
+  tabsuffix: §8 『&#FE259845🔥§8』
+AlejandrO_s:
+  tabsuffix: §8 『&#83181830⚘§8』
+Daniel:
+  tabsuffix: §8 『&#B4B0335❆§8』
+RodalnXDDDD:
+  tabsuffix: §8 『&#B2FF0015❆§8』
+Adrian10:
+  tabsuffix: §8 『&#9BDCFF13❆§8』
+Kevindelrap:
+  tabsuffix: §8 『&#CED88F4❆§8』
+uxldanny:
+  tabsuffix: §8 『&#B4B0335❆§8』
+diodeltra:
+  tabsuffix: §8『&#D9E1971♦§8』
+manasesromero:
+  tabsuffix: §8 『&#FF960F40♨§8』
+AquaSetup:
+  tabsuffix: §8 『&#F6FFAF5♲§8』
+ZerosXL:
+  tabsuffix: §8 『&#B2FF0015❆§8』
+AlejandroUxl:
+  tabsuffix: '&8 『&#B2FF0016❆&8』'
+AlejandritopRG:
+  tabsuffix: '&8 『&#F6FFAF5♲&8』'
+Divertidamente:
+  tabsuffix: '&8 『&#FF000050☠&8』'

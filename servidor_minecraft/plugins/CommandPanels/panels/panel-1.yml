@@ -34,7 +34,8 @@ panels:
         name: '&aWorld'
         left_click_commands:
         - '[player] betterrtp world world'
-   
+        - '[close]'
+        
       '12':
         material: SOUL_SAND
         stack: 1

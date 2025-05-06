@@ -687,3 +687,10 @@ Caused by: org.yaml.snakeyaml.reader.ReaderException: special characters are not
 	... 30 more
 [02:29:50] [Server thread/INFO]: [CommandPanels] Error in: panel-1.yml
 [02:29:51] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:31:07] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:31:09] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:33:03] [Server thread/INFO]: 73x1 issued server command: /tab reload
+[02:33:03] [Server thread/INFO]: [TAB] Disabled in 0ms
+[02:33:03] [Server thread/INFO]: [TAB] Enabled in 31ms
+[02:33:16] [Server thread/INFO]: 73x1 lost connection: Disconnected
+[02:33:16] [Server thread/INFO]: 73x1 left the game

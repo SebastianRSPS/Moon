@@ -1,110 +1,56 @@
 MyAnimation1:
-  change-interval: 100
-  texts:
-    - '&d-&3--------------'
-    - '&3-&d-&3-------------'
-    - '&3--&d-&3------------'
-    - '&3---&d-&3-----------'
-    - '&3----&d-&3----------'
-    - '&3-----&d-&3---------'
-    - '&3------&d-&3--------'
-    - '&3-------&d-&3-------'
-    - '&3--------&d-&3------'
-    - '&3---------&d-&3-----'
-    - '&3----------&d-&3----'
-    - '&3-----------&d-&3---'
-    - '&3------------&d-&3--'
-    - '&3-------------&d-&3-'
-    - '&3--------------&d-'
-    - '&3-------------&d-&3-'
-    - '&3------------&d-&3--'
-    - '&3-----------&d-&3---'
-    - '&3----------&d-&3----'
-    - '&3---------&d-&3-----'
-    - '&3--------&d-&3------'
-    - '&3-------&d-&3-------'
-    - '&3------&d-&3--------'
-    - '&3-----&d-&3---------'
-    - '&3----&d-&3----------'
-    - '&3---&d-&3-----------'
-    - '&3--&d-&3------------'
-    - '&3-&d-&3-------------'
-    - '&d-&3--------------'
-ServerName:
   change-interval: 300
   texts:
-  - '&c&lServerName'
-  - '&c&n&lServerName'
-  - '&b&lServerName'
-  - '&b&l&nServerName'
-  - '&e&lServerName'
-  - '&e&n&lServerName'
-web:
-  change-interval: 200
+  - "&r&f●&f●&f●"
+  - "&r&f●&f●&#A5FFE5●"
+  - "&r&f●&#A5FFE5●&#A5FFE5●"
+  - "&r&#A5FFE5●&#A5FFE5●&#A5FFE5●"
+  - "&r&f●&f●&f●"
+  - "&r&f●&#A5FFE5●&#A5FFE5●"
+  - "&r&f●&f●&#A5FFE5●"
+  - "&r&f●&f●&f●"
+  - "&r&f●&f●&f●"
+Gens:
+  change-interval: 300
   texts:
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&6w&eww.domain.com'
-  - '&ew&6w&ew.domain.com'
-  - '&eww&6w&e.domain.com'
-  - '&ewww&6.&edomain.com'
-  - '&ewww.&6d&eomain.com'
-  - '&ewww.d&6o&emain.com'
-  - '&ewww.do&6m&eain.com'
-  - '&ewww.dom&6a&ein.com'
-  - '&ewww.doma&6i&en.com'
-  - '&ewww.domai&6n&e.com'
-  - '&ewww.domain&6.&ecom'
-  - '&ewww.domain.&6c&eom'
-  - '&ewww.domain.c&6o&em'
-  - '&ewww.domain.co&6m'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-vote:
-  change-interval: 1000
+  - "&#FFFF50&lG&#D7D74A&lE&#AEAE43&lN&#86863D&lS"
+  - "&#D7D74A&lG&#FFFF50&lE&#D7D74A&lN&#AEAE43&lS"
+  - "&#AEAE43&lG&#D7D74A&lE&#FFFF50&lN&#D7D74A&lS"
+  - "&#86863D&lG&#AEAE43&lE&#D7D74A&lN&#FFFF50&lS"
+  - "&#AEAE43&lG&#86863D&lE&#AEAE43&lN&#D7D74A&lS"
+  - "&#D7D74A&lG&#AEAE43&lE&#86863D&lN&#AEAE43&lS"
+# Config by Zyro Studio
+# https://twitter.com/zyrostudio
+# ==================================== #
+
+tabAbove:
+  change-interval: 8000
   texts:
-  - '&avote.domain.com'
-  - '&a&nvote.domain.com'
-  - '&5vote.domain.com'
-  - '&5&nvote.domain.com'
-Welcome:
-  change-interval: 400
+    - '&b&l● &b&lTIENDA ⚐&7 [ᴅɪsᴄᴏʀᴅ] [ᴠᴏᴛᴇ] [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] &d&n[ᴅɪsᴄᴏʀᴅ]&7 [ᴠᴏᴛᴇ] [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] [ᴅɪsᴄᴏʀᴅ] &e&n[ᴠᴏᴛᴇ]&7 [sᴜᴘᴘᴏʀᴛ]'
+    - '&7[sᴛᴏʀᴇ] [ᴅɪsᴄᴏʀᴅ] [ᴠᴏᴛᴇ] &a&n[sᴜᴘᴘᴏʀᴛ]'
+tabLine1:
+  change-interval: 8000
   texts:
-  - '&7&lW_'
-  - '&7&lW_'
-  - '&7&lWe_'
-  - '&7&lWel_'
-  - '&7&lWelc_'
-  - '&7&lWelco_'
-  - '&7&lWelcom_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcom_'
-  - '&7&lWelco_'
-  - '&7&lWelc_'
-  - '&7&lWel_'
-  - '&7&lWe_'
-  - '&7&lW_'
-  - '&7&lW_'
-time:
-  change-interval: 3000
+    - '&fApóyanos comprando rangos y otros productos'
+    - "Únete a nuestra comunidad de Discord para recibir actualizaciones."
+    - '&f"¡Vota por nuestro servidor todos los días!"'
+tabLine2:
+  change-interval: 8000
   texts:
-    - '&7Time &b%time%'
-    - '&7Date &b%date%'
-barcolors:
-  change-interval: 1000
+    - '&f¡Una nueva modalidad esta aqui!'
+    - '&fᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛѕ, ɢɪᴠᴇᴀᴡᴀʏѕ, ᴀɴᴅ ᴍᴜᴄʜ ᴍᴏʀᴇ!'
+    - '&fᴀɴᴅ ɢᴇᴛ ꜰʀᴇᴇ ᴀᴡᴇѕᴏᴍᴇ ʀᴇᴡᴀʀᴅѕ!'
+    - '&fʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇѕᴛɪᴏɴѕ ᴏʀ ɴᴇᴇᴅ ᴀɴʏ ʜᴇʟᴘ.'
+tabBelow:
+  change-interval: 8000
   texts:
-    - RED
-    - BLUE
-    - GREEN
-    - YELLOW
+  - '&btienda.mineluxe.us'
+  - '&dᴅɪѕᴄᴏʀᴅ.ɢɢ/mineluxe'
+  - '&eᴠᴏᴛᴇ.mineluxe'
+  - '&amc.mineluxe.us'
+
+# ==================================== #
+# Official TAB Wiki
+# https://github.com/NEZNAMY/TAB/wiki

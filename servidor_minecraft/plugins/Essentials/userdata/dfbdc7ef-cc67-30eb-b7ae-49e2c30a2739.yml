@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1746497614405
+  logout: 1746498796654
   login: 1746497635296
 money: '0'
 last-account-name: 73x1
@@ -26,5 +26,5 @@ logoutlocation:
   x: -5.763283215388376
   y: 64.0
   z: 41.79480907776208
-  yaw: -85.72506713867188
-  pitch: 27.691171646118164
+  yaw: -144.70745849609375
+  pitch: 25.847972869873047
