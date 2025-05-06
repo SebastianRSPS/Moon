@@ -1,0 +1,95 @@
+panels:
+  panel-1:
+    perm: default
+    rows: 5
+    title: '&8Generated panel-1'
+    empty: BLACK_STAINED_GLASS_PANE
+    item:
+      '0':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '1':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '7':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '8':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '9':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '11':
+        material: GRASS_BLOCK
+        stack: 1
+        name: ''
+      '12':
+        material: SOUL_SAND
+        stack: 1
+        name: ''
+      '13':
+        material: PURPUR_BLOCK
+        stack: 1
+        name: ''
+      '15':
+        material: NAME_TAG
+        stack: 1
+        name: ''
+      '17':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '20':
+        material: CHEST
+        stack: 1
+        name: ''
+      '21':
+        material: DIAMOND_SWORD
+        stack: 1
+        name: ''
+      '22':
+        material: BOW
+        stack: 1
+        name: ''
+      '24':
+        material: COMPASS
+        stack: 1
+        name: ''
+      '27':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '30':
+        material: DIAMOND_PICKAXE
+        stack: 1
+        name: ''
+      '33':
+        material: ENDER_PEARL
+        stack: 1
+        name: ''
+      '35':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '36':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '37':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '43':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''
+      '44':
+        material: MAGENTA_STAINED_GLASS_PANE
+        stack: 1
+        name: ''

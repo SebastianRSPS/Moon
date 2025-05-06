@@ -1,0 +1,468 @@
+[02:09:55] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/DiscordSRV-Build-1.27.0.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/DiscordSRV-Build-1.27.0.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.Main.main(Main.java:126) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.Main.main(Main.java:316) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.util.zip.ZipFile$Source.findEND(ZipFile.java:1637) ~[?:?]
+	at java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1645) ~[?:?]
+	at java.util.zip.ZipFile$Source.<init>(ZipFile.java:1483) ~[?:?]
+	at java.util.zip.ZipFile$Source.get(ZipFile.java:1445) ~[?:?]
+	at java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:717) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:251) ~[?:?]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:180) ~[?:?]
+	at java.util.jar.JarFile.<init>(JarFile.java:346) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:51) ~[paper-1.19.4.jar:git-Paper-550]
+	... 20 more
+[02:09:55] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/SkinsRestorer (1).jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/SkinsRestorer (1).jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.Main.main(Main.java:126) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.Main.main(Main.java:316) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Directory 'plugins/SkinsRestorer (1).jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:54) ~[paper-1.19.4.jar:git-Paper-550]
+	... 20 more
+[02:09:55] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: Directory 'plugins/Maintenance-4.2.1.jar' failed to load!
+java.lang.RuntimeException: Directory 'plugins/Maintenance-4.2.1.jar' failed to load!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:59) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$registerProviders$1(DirectoryProviderSource.java:34) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:32) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:100) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.Main.main(Main.java:126) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.Main.main(Main.java:316) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Directory 'plugins/Maintenance-4.2.1.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:54) ~[paper-1.19.4.jar:git-Paper-550]
+	... 20 more
+[02:09:59] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:10:00] [ServerMain/INFO]: Loaded 7 recipes
+[02:10:01] [Server thread/INFO]: Starting minecraft server version 1.19.4
+[02:10:01] [Server thread/INFO]: Loading properties
+[02:10:01] [Server thread/INFO]: This server is running Paper version git-Paper-550 (MC: 1.19.4) (Implementing API version 1.19.4-R0.1-SNAPSHOT) (Git: 483368e on ver/1.19.4)
+[02:10:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:10:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:10:01] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[02:10:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[02:10:01] [Server thread/INFO]: Default game type: SURVIVAL
+[02:10:01] [Server thread/INFO]: Generating keypair
+[02:10:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:10:01] [Server thread/INFO]: Using epoll channel type
+[02:10:01] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[02:10:01] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[02:10:01] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/Jobs5.2.4.2.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [CMILib]. Please download and install these plugins to run 'Jobs'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:431) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[02:10:01] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/worldguard-bukkit-7.0.9-dist.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [WorldEdit]. Please download and install these plugins to run 'WorldGuard'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:431) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[02:10:01] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/ItemTag-3.2.1.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [ItemEdit]. Please download and install these plugins to run 'ItemTag'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:431) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[02:10:02] [Server thread/WARN]: [ViaVersion Config] Invalid blocked version protocol found in config: '[<1.9, >1.20.2]'
+[02:10:02] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'WorldGuardExtraFlags.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [WorldGuard]. Please download and install these plugins to run 'WorldGuardExtraFlags v4.2.3'.
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:115) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.loadPlugins(CraftServer.java:431) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[02:10:02] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_19_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[02:10:05] [Server thread/WARN]: Legacy plugin StaffTools v4.2 does not specify an api-version.
+[02:10:05] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v4.9.2
+[02:10:05] [Server thread/INFO]: [ViaVersion] ViaVersion 4.9.2 is now loaded. Registering protocol transformers and injecting...
+[02:10:05] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[02:10:05] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[02:10:05] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[02:10:06] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[02:10:06] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.119
+[02:10:06] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[02:10:06] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.2.0
+[02:10:07] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[02:10:07] [Server thread/INFO]: [TAB] Loading server plugin TAB v4.1.2
+[02:10:07] [Server thread/INFO]: [UltimateClans] Loading server plugin UltimateClans v6.13.3
+[02:10:07] [Server thread/INFO]: [CoreProtect] Loading server plugin CoreProtect v22.4
+[02:10:07] [Server thread/INFO]: [AuctionHouse] Loading server plugin AuctionHouse v1.3.0-b10
+[02:10:07] [Server thread/INFO]: [CrazyEnchantments] Loading server plugin CrazyEnchantments v1.9.9.2
+[02:10:07] [Server thread/INFO]: [AxShulkers] Loading server plugin AxShulkers v1.12.0
+[02:10:07] [Server thread/INFO]: [AxShulkers] Downloaded library https://repo1.maven.org/maven2/dev/dejvokep/boosted-yaml/1.3/boosted-yaml-1.3.jar
+[02:10:08] [Server thread/INFO]: [AxShulkers] Downloaded library https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.42.0.0/sqlite-jdbc-3.42.0.0.jar
+[02:10:08] [Server thread/INFO]: [AxShulkers] Downloaded library https://repo1.maven.org/maven2/com/h2database/h2/2.1.214/h2-2.1.214.jar
+[02:10:08] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v4.9.1
+[02:10:08] [Server thread/INFO]: [StaffTools] Loading server plugin StaffTools v4.2
+[02:10:08] [Server thread/INFO]: [CommandPanels] Loading server plugin CommandPanels v3.21.3.0
+[02:10:08] [Server thread/INFO]: [AdvancedSetSpawn] Loading server plugin AdvancedSetSpawn v1.0.0
+[02:10:08] [Server thread/INFO]: [DeluxeMenus] Loading server plugin DeluxeMenus v1.14.0-Release
+[02:10:08] [Server thread/INFO]: [DeluxeMenus] NMS hook has been setup successfully!
+[02:10:08] [Server thread/INFO]: [InventoryRollbackPlus] Loading server plugin InventoryRollbackPlus v1.6.15
+[02:10:08] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.13
+[02:10:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:10:08] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.119
+[02:10:09] [Server thread/ERROR]: [LuckPerms] [STDERR] SLF4J: No SLF4J providers were found.
+[02:10:09] [Server thread/WARN]: Nag author(s): '[Luck]' of 'LuckPerms v5.4.119' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[02:10:09] [Server thread/ERROR]: [LuckPerms] [STDERR] SLF4J: Defaulting to no-operation (NOP) logger implementation
+[02:10:09] [Server thread/ERROR]: [LuckPerms] [STDERR] SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+[02:10:14] [Server thread/INFO]:         __    
+[02:10:14] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.119
+[02:10:14] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[02:10:14] [Server thread/INFO]: 
+[02:10:14] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[02:10:15] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[02:10:15] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[02:10:15] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[02:10:15] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1881ms)
+[02:10:15] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[02:10:16] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[02:10:16] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[02:10:16] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[02:10:16] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[02:10:16] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.2.0
+[02:10:16] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[02:10:16] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[02:10:16] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[02:10:16] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[02:10:16] [Server thread/INFO]: Preparing level "world"
+[02:10:17] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:10:17] [Server thread/INFO]: Time elapsed: 274 ms
+[02:10:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:10:17] [Server thread/INFO]: Time elapsed: 126 ms
+[02:10:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:10:17] [Server thread/INFO]: Time elapsed: 89 ms
+[02:10:17] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v4.9.2
+[02:10:18] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.19.4 (762)
+[02:10:18] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
+[02:10:18] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[02:10:18] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[02:10:18] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[02:10:18] [Server thread/INFO]: [Essentials] Found 1 files to convert...
+[02:10:18] [Server thread/INFO]: [Essentials] Converted 0/1
+[02:10:18] [Server thread/INFO]: [Essentials] Ban format update complete.
+[02:10:18] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[02:10:18] [Server thread/INFO]: [Essentials] Done converting ignore list.
+[02:10:18] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[02:10:18] [Server thread/INFO]: [Essentials] Done converting legacy userdata keys to Configurate.
+[02:10:18] [Server thread/INFO]: [Essentials] Done converting mail list.
+[02:10:18] [Server thread/INFO]: [Essentials] #===========================================================================#
+[02:10:18] [Server thread/INFO]: [Essentials]  EssentialsX will now purge any NPC accounts which were incorrectly created.
+[02:10:18] [Server thread/INFO]: [Essentials]  Only NPC accounts with the default starting balance will be deleted. If
+[02:10:18] [Server thread/INFO]: [Essentials]  they turn out to be valid NPC accounts, they will be re-created as needed.
+[02:10:18] [Server thread/INFO]: [Essentials]  Any files deleted here will be backed up to the 
+[02:10:18] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup" folder. If you notice any files
+[02:10:18] [Server thread/INFO]: [Essentials]  have been purged incorrectly, you should restore it from the backup and
+[02:10:18] [Server thread/INFO]: [Essentials]  report it to us on GitHub:
+[02:10:18] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
+[02:10:18] [Server thread/INFO]: [Essentials] 
+[02:10:18] [Server thread/INFO]: [Essentials]  NOTE: This is a one-time process and will take several minutes if you have
+[02:10:18] [Server thread/INFO]: [Essentials]  a lot of userdata files! If you interrupt this process, EssentialsX will
+[02:10:18] [Server thread/INFO]: [Essentials]  skip the process until you rename or remove the backup folder.
+[02:10:18] [Server thread/INFO]: [Essentials] #===========================================================================#
+[02:10:18] [Server thread/INFO]: [Essentials] Found ~1 files under "plugins/Essentials/userdata"...
+[02:10:18] [Server thread/INFO]: [Essentials] #===========================================================================#
+[02:10:18] [Server thread/INFO]: [Essentials]  EssentialsX has finished purging NPC accounts.
+[02:10:18] [Server thread/INFO]: [Essentials] 
+[02:10:18] [Server thread/INFO]: [Essentials]  Deleted accounts: 0
+[02:10:18] [Server thread/INFO]: [Essentials]  Total accounts processed: 1
+[02:10:18] [Server thread/INFO]: [Essentials] 
+[02:10:18] [Server thread/INFO]: [Essentials]  Purged accounts have been backed up to
+[02:10:18] [Server thread/INFO]: [Essentials]  "plugins/Essentials/userdata-npc-backup", and can be restored from there
+[02:10:18] [Server thread/INFO]: [Essentials]  if needed. Please report any files which have been incorrectly deleted
+[02:10:18] [Server thread/INFO]: [Essentials]  to us on GitHub:
+[02:10:18] [Server thread/INFO]: [Essentials]  https://github.com/EssentialsX/Essentials/issues/new/choose
+[02:10:18] [Server thread/INFO]: [Essentials] #===========================================================================#
+[02:10:19] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[02:10:19] [Server thread/INFO]: [Essentials] Using locale en
+[02:10:19] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[02:10:19] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[02:10:19] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[02:10:19] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[02:10:19] [Server thread/INFO]: [TAB] Enabling TAB v4.1.2
+[02:10:20] [Server thread/INFO]: [TAB] Enabled in 445ms
+[02:10:20] [Server thread/INFO]: [UltimateClans] Enabling UltimateClans v6.13.3
+[02:10:20] [Server thread/INFO]: [UltimateClans] ========================================
+[02:10:20] [Server thread/INFO]: [UltimateClans]  _     _  _        _                              ______  _                     
+[02:10:20] [Server thread/INFO]: [UltimateClans] | |   | || | _    (_)               _            / _____)| |                  V6
+[02:10:20] [Server thread/INFO]: [UltimateClans] | |   | || || |_   _  ____    ____ | |_    ____ | /      | |  ____  ____    ___ 
+[02:10:20] [Server thread/INFO]: [UltimateClans] | |   | || ||  _) | ||    \  / _  ||  _)  / _  )| |      | | / _  ||  _ \  /___)
+[02:10:20] [Server thread/INFO]: [UltimateClans] | |___| || || |__ | || | | |( ( | || |__ ( (/ / | \_____ | |( ( | || | | ||___ |
+[02:10:20] [Server thread/INFO]: [UltimateClans]  \______||_| \___)|_||_|_|_| \_||_| \___) \____) \______)|_| \_||_||_| |_|(___/ 
+[02:10:20] [Server thread/INFO]: [UltimateClans]  
+[02:10:21] [Server thread/INFO]: [UltimateClans] Licensed to: Rcorcho6 (25742)
+[02:10:21] [Server thread/INFO]: [UltimateClans] Language: EN (default)
+[02:10:21] [Server thread/INFO]: [UltimateClans] Setup ScriptEngine: 
+[02:10:21] [Server thread/INFO]: [UltimateClans]  - Loaded successfully
+[02:10:22] [Server thread/INFO]: [UltimateClans] Setup database: SQLITE (Medium)
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Clan database [OK]
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Player database [OK]
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Invite database [OK]
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - NEW Moderation database [OK]
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Logger database [OK]
+[02:10:22] [Server thread/INFO]: [UltimateClans] Setup hooks...
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - ProtocolLib
+[02:10:22] [Server thread/INFO]: [UltimateClans] Setup bedrock hook...
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Not found.
+[02:10:22] [Server thread/INFO]: [UltimateClans] Setup economy...
+[02:10:22] [Server thread/INFO]: [UltimateClans]  - Vault
+[02:10:22] [Server thread/INFO]: [UltimateClans] Economy: VAULT
+[02:10:22] [Server thread/INFO]: [UltimateClans] Loaded 66 aliases.
+[02:10:22] [Server thread/INFO]: [UltimateClans] Loaded 51 commands.
+[02:10:22] [Server thread/INFO]: [UltimateClans] Loaded 1 clan patent(s).
+[02:10:22] [Server thread/INFO]: [UltimateClans] Setup Addons...
+[02:10:22] [Server thread/INFO]: [UltimateClans] ========================================
+[02:10:22] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v22.4
+[02:10:22] [Server thread/INFO]: [CoreProtect] CoreProtect has been successfully enabled! 
+[02:10:22] [Server thread/INFO]: [CoreProtect] Using SQLite for data storage.
+[02:10:22] [Server thread/INFO]: --------------------
+[02:10:22] [Server thread/INFO]: [CoreProtect] Enjoy CoreProtect? Join our Discord!
+[02:10:22] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[02:10:22] [Server thread/INFO]: --------------------
+[02:10:22] [Server thread/INFO]: [AuctionHouse] Enabling AuctionHouse v1.3.0-b10
+[02:10:22] [Server thread/INFO]: [AuctionHouse] ========== Akarian Auction House ==========
+[02:10:22] [Server thread/INFO]: [AuctionHouse]  
+[02:10:22] [Server thread/INFO]: [AuctionHouse] Loading Akarian Auction House v1.3.0-b10...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Setting up Economy...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Successfully hooked into EssentialsX Economy.
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Loading database...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Successfully connected to FILE database.
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Loading listings...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Listings loaded successfully.
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Loading users...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Users loaded successfully.
+[02:10:25] [Server thread/INFO]: [AuctionHouse] Loading layouts...
+[02:10:25] [Server thread/INFO]: [AuctionHouse] =================================================
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Enabling CrazyEnchantments v1.9.9.2
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the config.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded config.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the BlockList.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded BlockList.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the Data.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Data.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantments.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantments.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the GKitz.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded GKitz.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the Messages.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Messages.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantment-Types.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantment-Types.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Loading the Tinker.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Tinker.yml.
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §8§l=== §e§lCrazyEnchantment Hook Status §8§l===
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lSILK_SPAWNERS_V2 §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lGRIEF_PREVENTION §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lORAXEN §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lMCMMO §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lWORLDGUARD §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lWORLDEDIT §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lSILK_SPAWNERS §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lFACTIONS_UUID §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lSUPERIORSKYBLOCK §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lSPARTAN §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lTOWNYADVANCED §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lPLOT_SQUARED §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lVAULT §a§lFOUND
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] §6§lNO_CHEAT_PLUS §c§lNOT FOUND
+[02:10:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_19_R3! Trying to find NMS support
+[02:10:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R3' loaded!
+[02:10:25] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[02:10:25] [Thread-18/WARN]: [NBTAPI] [NBTAPI] The NBT-API located at 'package com.badbones69.crazyenchantments.de.tr7zw.changeme.nbtapi' seems to be outdated!
+[02:10:25] [Thread-18/WARN]: [NBTAPI] [NBTAPI] Current Version: '2.11.2' Newest Version: 2.15.0'
+[02:10:25] [Thread-18/WARN]: [NBTAPI] [NBTAPI] Please update the NBTAPI or the plugin that contains the api(nag the mod author when the newest release has an old version, not the NBTAPI dev)!
+[02:10:25] [Server thread/INFO]: [CrazyEnchantments] G-Kitz support is now enabled.
+[02:10:25] [Server thread/INFO]: [AxShulkers] Enabling AxShulkers v1.12.0
+[02:10:26] [Server thread/INFO]: [AxShulkers] Loaded plugin! Using H2 database to store data!
+[02:10:26] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v4.9.1
+[02:10:26] [Server thread/INFO]: [StaffTools] Enabling StaffTools v4.2*
+[02:10:26] [Server thread/ERROR]: StaffTools discord integration is disabled!
+[02:10:26] [Server thread/INFO]: --------------
+[02:10:26] [Server thread/INFO]:  StaffTools 4.2 by MrBorder
+[02:10:26] [Server thread/INFO]:   Enabled
+[02:10:26] [Server thread/INFO]: --------------
+[02:10:26] [Server thread/INFO]: [CommandPanels] Enabling CommandPanels v3.21.3.0
+[02:10:26] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.21.3.0 Plugin Loading...
+[02:10:26] [Server thread/INFO]: [CommandPanels] RockyHawk's CommandPanels v3.21.3.0 Plugin Loaded!
+[02:10:26] [Server thread/INFO]: [AdvancedSetSpawn] Enabling AdvancedSetSpawn v1.0.0
+[02:10:26] [Server thread/INFO]: §7------------------------------
+[02:10:26] [Server thread/INFO]: 
+[02:10:26] [Server thread/INFO]: §bAdvancedSetSpawn §aACTIVE
+[02:10:26] [Server thread/INFO]: 
+[02:10:26] [Server thread/INFO]: §bAuthor§7: §dTunahanXXDev
+[02:10:26] [Server thread/INFO]: §bVersion§7: §d1.0.0
+[02:10:26] [Server thread/INFO]: §bApi-Version§7: §d1.19
+[02:10:26] [Server thread/INFO]: §bLisance§7: §dMIT
+[02:10:26] [Server thread/INFO]: 
+[02:10:26] [Server thread/INFO]: §7------------------------------
+[02:10:26] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.14.0-Release
+[02:10:26] [Server thread/ERROR]: [DeluxeMenus] Could not hook into PlaceholderAPI!
+DeluxeMenus will now disable!
+[02:10:26] [Server thread/INFO]: [DeluxeMenus] Disabling DeluxeMenus v1.14.0-Release
+[02:10:26] [Server thread/ERROR]: Error occurred (in the plugin loader) while disabling DeluxeMenus v1.14.0-Release (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "java.util.Map.clear()" because "this.itemHooks" is null
+	at com.extendedclip.deluxemenus.DeluxeMenus.onDisable(DeluxeMenus.java:190) ~[DeluxeMenus-1.14.0-Release.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:283) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:224) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:537) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at com.extendedclip.deluxemenus.DeluxeMenus.onEnable(DeluxeMenus.java:97) ~[DeluxeMenus-1.14.0-Release.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[paper-1.19.4.jar:git-Paper-550]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugin(CraftServer.java:563) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugins(CraftServer.java:474) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:638) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:308) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[02:10:26] [Server thread/INFO]: [InventoryRollbackPlus] Enabling InventoryRollbackPlus v1.6.15
+[02:10:26] [Server thread/INFO]: [InventoryRollbackPlus] Inventory backup data is set to save to: YAML
+[02:10:26] [Server thread/INFO]: [InventoryRollbackPlus] bStats are enabled
+[02:10:26] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.13
+[02:10:27] [Server thread/INFO]: [BetterRTP] Cooldown = 600
+[02:10:27] [Server thread/INFO]: Running delayed init tasks
+[02:10:27] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[02:10:27] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] Fetching version information...
+[02:10:27] [Server thread/INFO]: [UltimateClans] Start invite loader...
+[02:10:27] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[02:10:27] [Craft Scheduler Thread - 5 - InventoryRollbackPlus/INFO]: [InventoryRollbackPlus] Checking for updates...
+[02:10:27] [Server thread/INFO]: [UltimateClans] Loaded 0 invites(s).
+[02:10:27] [Server thread/INFO]: [UltimateClans] Start moderation loader...
+[02:10:27] [Server thread/INFO]: [UltimateClans] Loaded 0 moderations(s).
+[02:10:27] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] Checking for Updates ... 
+[02:10:27] [Server thread/INFO]: [UltimateClans] Start logger loader...
+[02:10:27] [Server thread/INFO]: [UltimateClans] Loaded 0 log(s).
+[02:10:27] [Server thread/INFO]: [UltimateClans] Start clans loader...
+[02:10:27] [Server thread/INFO]: [UltimateClans] Loaded 0 clan(s).
+[02:10:27] [Server thread/INFO]: Done (26.258s)! For help, type "help"
+[02:10:27] [Server thread/INFO]: Timings Reset
+[02:10:27] [Craft Scheduler Thread - 8 - UltimateClans/INFO]: [UltimateClans] Start players loader...
+[02:10:27] [Craft Scheduler Thread - 8 - UltimateClans/INFO]: [UltimateClans] Loaded 1 player(s).
+[02:10:27] [Craft Scheduler Thread - 5 - InventoryRollbackPlus/INFO]: 
+===============================================================================
+A feature update to InventoryRollbackPlus is available!
+Download at https://www.spigotmc.org/resources/inventoryrollbackplus-1-8-1-16-x.85811/
+(current: 1.6.15, latest: 1.7.2)
+===============================================================================
+
+[02:10:27] [Craft Scheduler Thread - 2 - Vault/INFO]: [Vault] No new version available
+[02:10:27] [Server thread/WARN]: [ViaVersion] There is a newer plugin version available: 5.3.2, you're on: 4.9.2
+[02:10:27] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] There is a new EssentialsX version available for download: 2.21.0.
+[02:10:27] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html?branch=stable
+[02:10:28] [Server thread/INFO]: [ProtocolLib] The updater found an update: 5.3.0 (Running 5.2.0). Download at https://www.spigotmc.org/resources/protocollib.1997/
+[02:10:30] [Thread-31/INFO]: [UltimateClans] Find for new versions...
+[02:10:30] [Thread-31/WARN]: [UltimateClans] New version (8.8.7) of Ultimate Clans is avaliable in https://polymart.org/r/1162
+[02:10:35] [User Authenticator #0/INFO]: UUID of player 73x1 is dfbdc7ef-cc67-30eb-b7ae-49e2c30a2739
+[02:10:35] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] Custom worlds heights are NOT SUPPORTED for 1.16 players and older and may lead to errors!
+[02:10:35] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] You have min/max set to -64/256
+[02:10:35] [Server thread/INFO]: 73x1 joined the game
+[02:10:35] [Server thread/INFO]: 73x1[/127.26.205.184:43271] logged in with entity id 103 at ([world]-3.5, 63.0, 37.5)
+[02:10:43] [Server thread/INFO]: 73x1 issued server command: /ah
+[02:10:46] [Server thread/INFO]: 73x1 issued server command: /shop
+[02:10:56] [Server thread/INFO]: Made 73x1 a server operator
+[02:11:00] [Server thread/INFO]: 73x1 issued server command: /gmc
+[02:11:11] [Server thread/INFO]: 73x1 issued server command: /plugins
+[02:11:52] [Server thread/INFO]: 73x1 issued server command: /staff
+[02:11:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R3! Trying to find NMS support
+[02:11:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R3' loaded!
+[02:11:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'CommandPanels' to create a bStats instance!
+[02:11:59] [Server thread/INFO]: 73x1 issued server command: /staff
+[02:12:33] [Server thread/INFO]: 73x1 issued server command: /ce
+[02:12:39] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: v1_19_R3! Trying to find NMS support
+[02:12:39] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_19_R3' loaded!
+[02:12:39] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AxShulkers' to create a bStats instance!
+[02:12:47] [Server thread/INFO]: 73x1 issued server command: /ce add Lightning 59595959595
+[02:12:50] [Server thread/INFO]: 73x1 issued server command: /ce add Lightning 59595959
+[02:13:34] [Server thread/INFO]: 73x1 lost connection: Disconnected
+[02:13:34] [Server thread/INFO]: 73x1 left the game
+[02:13:55] [User Authenticator #1/INFO]: UUID of player 73x1 is dfbdc7ef-cc67-30eb-b7ae-49e2c30a2739
+[02:13:55] [Server thread/INFO]: 73x1 joined the game
+[02:13:55] [Server thread/INFO]: 73x1[/127.26.205.184:42949] logged in with entity id 547 at ([world]-5.763283215388376, 64.0, 41.79480907776208)
+[02:15:48] [Server thread/INFO]: 73x1 issued server command: /commandpanel
+[02:15:56] [Server thread/INFO]: 73x1 issued server command: /register 261015
+[02:16:03] [Server thread/INFO]: 73x1 issued server command: /login 261015
+[02:16:06] [Server thread/INFO]: 73x1 issued server command: /commandpanel
+[02:16:23] [Server thread/INFO]: 73x1 issued server command: /cpg
+[02:17:01] [Server thread/INFO]: 73x1 issued server command: /cpg 45
+[02:17:06] [Server thread/INFO]: 73x1 issued server command: /cpg 1
+[02:17:10] [Server thread/INFO]: 73x1 issued server command: /cpg 6
+[02:17:18] [Server thread/INFO]: 73x1 issued server command: /cpg 5
+[02:18:23] [Server thread/INFO]: 73x1 issued server command: /cpg 5
+[02:18:40] [Server thread/INFO]: 73x1 issued server command: /cpg 5

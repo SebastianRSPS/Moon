@@ -1,0 +1,9 @@
+Prefix: '&bAdvancedSetSpawn &7» '
+Permissions:
+  Set-Spawn: adss.setspawn
+  Spawn: adss.spawn
+  Spawn-Reset: adss.spawnreset
+  Reload: adss.reload
+Join-Spawn-Teleport: true
+Join-Spawn-Teleport-Message: true
+Spawn-Is-Not -Set-Message: true

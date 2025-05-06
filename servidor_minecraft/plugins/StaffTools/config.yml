@@ -1,0 +1,689 @@
+#Message sent to the command sender when the command is not run by a player
+console_error_message: '&8[&bStaffTools&8] &cYou are unable to execute this command!'
+notAPlayer: "&cOnly players may execute this command!"
+
+#Message sent to the sender when the module is disabled
+moduleDisabled: '&8[&bStaffTools&8]&c Error! this module is disabled!'
+
+#Illegal Arguments message
+illegalArguments: '&8[&bStaffTools&8]&c Error! Illegal arguments! Please try again with the correct arguments!'
+
+#Player offline message
+player_offline_message: '&8[&bStaffTools&8] &cThe player you have entered is offline!'
+targetOffline: '&b%target% &cIs not online or does not exist.'
+
+#No permission message
+no_perm_message: '&8[&bStaffTools&8] &cYou do not have permission to execute this command!'
+noPermission: "&cYou do not have permission to execute this action."
+
+Discord:
+  enabled: false
+  token: 'Insert Bot token here' #If you do not know how to create a bot, get a bot token, and invite it to your server please see https://discordpy.readthedocs.io/en/latest/discord.html
+  ChangeStatus: true #Whether to set the field below as the status of the bot.
+  status: 'StaffTools' #Status of the bot
+  Donator: #This feature allows you to change the pictures automatically put in the StaffTools embeds.
+    #For more info about this please join the StaffTools discord support server
+    enabled: false #Dont turn this to true unless you have a key, else it'll just cause errors.
+    key: 'Insert key here if you have one' #Do not share your key, sharing a key will cause the key to disable.
+    image: 'Insert image link here'
+    thumbnail: 'Insert thumbnail image link here'
+    color: 0xf0e0e0 #Make sure to start it with 0x
+    Helpop-title: 'StaffTools Helpop System'
+    Report-title: 'StaffTools Report System'
+    PunishmentAnnouncer-title: 'StaffTools PunishmentAnnouncer System'
+
+PlaceholderAPI:
+  enabled: false
+  vanish:
+    output-on: "&aVanished"
+    output-off: "&cUnvanished"
+  staffchat:
+    output-on: "&aEnabled"
+    output-off: "&cDisabled"
+  #Placeholders:
+  #%stafftools_playercount% returns the server playercount after reducing the vanished players amount.
+  #%stafftools_staffonline% returns the amount of staff members online minus the vanished ones.
+  #%stafftools_staffcount% returns the amount of staff members online no matter their status.
+  #%stafftools_isvanish% returns whether the player is vanished or not, configurable output above.
+  #%stafftools_staffchat% returns whether the player has staffchat enabled or not, configurable output above.
+
+#Discord PunishmentAnnouncer (Currently compatible with AdvancedBan, StaffTools, and LiteBans punishment systems) & Reports option.
+#For more information join the stafftools discord support server or see the product page.
+PunishmentAnnouncer:
+  litebans: false
+  stafftools: false
+  advancedban: false
+  BigImage: true
+  role: "insert role id to ping"
+  channel: "insert channel id to send announcements"
+  FieldTitles:
+    executor: "Executor"
+    punished: "Punished"
+    punished-uuid: "Punished UUID"
+    type: "Punishment Type"
+    duration: "Duration"
+    reason: "Reason"
+    permanent: "Permanent"
+    silent: "Silent"
+
+#FreezeChat Command Below
+FreezeChat:
+  enabled: true
+  chat_frozen_message: '&8[&bStaffTools&8]&6 You have successfully frozen the chat!'
+  chat_frozen_global: '&4&lNotice! Chat Has Been Frozen By Staff!'
+  player_frozen_message: '&8[&bStaffTools&8]&c Chat is frozen and you are unable to speak! Please wait until chat is unfrozen!'
+  chat_unfrozen_message: '&8[&bStaffTools&8]&6 You have successfully unfrozen the chat!'
+  chat_unfrozen_global: '&4&lNotice! Chat Has Been Unfrozen By Staff!'
+
+#Vanish Command Below
+Vanish:
+  enabled: true
+  unvanish_others: '&8[&bStaffTools&8] &6Successfully disabled Vanish for &b%player%&6!'
+  vanish_others: '&8[&bStaffTools&8] &6Successfully enabled Vanish for &b%player%&6!'
+  vanish: '&8[&bStaffTools&8] &6You have successfully vanished!'
+  unvanish: '&8[&bStaffTools&8] &6You have successfully unvanished'
+  other_vanish: '&b%player% &4Has just vanished'
+  other_unvanish: "&b%player% &4Has just unvanished"
+  vanish_fake_broadcast: true #Enable fake messages
+  vanish_message: '&8[&c-&8] &c%player%' #Fake message to send to all online players when a staff vanishes
+  unvanish_message: '&8[&a+&8] &a%player%' #Fake message to send to all online players when a staff un-vanishes
+  silentOpening: "&6Opening chest silently."
+  HotbarMessage: true
+  HotbarMessageContent: "&aYou are currently vanished"
+  booleans:
+    allow_break: false
+    allow_place: false
+    allow_pickup: false
+    allow_drop: false
+    allow_damage: false
+    silence_chests: true
+
+#StaffChat Command Below
+Staffchat:
+  enabled: true
+  staffchat_kicker: '&4[&eSTAFF&4]&5 <&a%player%&5>&6 '
+  enabled_toggle: '&4[&eSTAFF&4]&a Staff chat toggled!'
+  disabled_toggle: '&4[&eSTAFF&4]&a Staff chat toggle disabled!'
+  no_perm_removal: '&4[&eSTAFF&4]&a Staff Chat has been toggled off due to lack of permissions!'
+  booleans:
+    toggle_on_join: false
+
+#AdminChat Command Below
+Adminchat:
+  enabled: true
+  adminchat_kicker: '&b[&cADMIN&b]&5 <&a%player%&5>&b '
+  enabled_toggle: '&b[&cADMIN&b]&a Admin chat toggled on!'
+  disabled_toggle: '&b[&cADMIN&b]&a Admin chat toggled off!'
+  no_perm_removal: '&b[&cADMIN&b]&a Admin Chat has been toggled off due to lack of permissions!'
+  booleans:
+    toggle_on_join: false
+
+#Freeze Command Below`
+Freeze:
+  enabled: true
+  frozen: '&4&lNotice! You have been frozen by staff and you are unable to move! please await a staff member to contact you and DO NOT LEAVE! If you leave you will be banned!'
+  freeze_success: '&8[&bStaffTools&8]&6 You have successfully froze &b%player%'
+  unfrozen: '&4&lNotice! You have been unfrozen by staff and you are now able to move again!'
+  unfreeze_success: '&8[&bStaffTools&8]&6 You have successfully unfroze &b%player%'
+  ban_command: 'ban %player% Leaving while frozen!'
+  damageeFrozen: "&b%target% &cIs frozen and you cannot hit them."
+  illegalCommands:
+    - 'tpa'
+    - 'spawn'
+  sound:
+    enabled: true
+    sound: ENTITY_POLAR_BEAR_WARNING
+  title:
+    enabled: true
+    maintitle: "&4&l⚠ Frozen ⚠"
+    subtitle: "&c&lDO NOT LEAVE THE SERVER!"
+
+#Report Command Below
+Report:
+  enabled: true
+  cooldown: '&cYou are on cooldown for &4%cooldown% &cseconds'
+  cooldowntime: 60 #Cooldown between executing /report
+  clearedall: '&8[&bStaffTools&8]&c You successfully cleared all the reports!'
+  clearedplayerreport: '&8[&bStaffTools&8]&c You successfully cleared &b%player%&c report!'
+  reported_player: '&8[&bStaffTools&8]&6 Successfully reported &b%player% &6for %reason%'
+  reportself: '&8[&bStaffTools&8]&c You cannot report yourself!'
+  newreport:
+    - "&8&m--------I--------"
+    - ""
+    - "   &6&lNEW &cReport!"
+    - "   &6Player&c %player%"
+    - "   &6Reported&c %target%"
+    - "   &6Reason &c%reason%"
+    - ""
+    - "&8&m--------I--------"
+  discord:
+    enabled: false
+    role: 'insert role id to ping here' #If you do not know how to get a role id, enable developer mode in User Settings then right click the role and click 'Copy ID'
+    channel: 'insert channel id here' #If you do not know how to get a channel id, enable developer mode in User Settings then right click the channel and click 'Copy ID'
+    BigImage: true
+    ResolvedMessage: "You have successfully marked `%player%'s` report on `%reported%` as resolved"
+    FieldTitles:
+      reporter: "Reporter"
+      reported: "Reported"
+      reason: "Reason"
+  AutoBan: # AutoBan player after an X amount of reports in X amount of minutes.
+    enabled: false
+    amount: 5n
+    expire: 30 # In minutes
+    command: "stafftools:ban %player% Exceeded maximum report amount in 30 mins."
+  OtherNotif: #Notify the reportee when they're being reported and option to include by who using a %player% placeholder.
+    enabled: false
+    message: "&b%player%&c Has reported you."
+
+Helpop:
+  enabled: true
+  cooldown: '&cYou are on cooldown for &4%cooldown% &cseconds'
+  cooldowntime: 60
+  requestSent: "&6Successfully sent help request"
+  newrequest:
+    - "&8&m--------I--------"
+    - "                      "
+    - "   &6&lNEW &cHelp Request!"
+    - "   &6Player&c %player%"
+    - "   &6Request &c%request%"
+    - "                      "
+    - "&8&m--------I--------"
+  discord:
+    enabled: false
+    BigImage: true
+    channel: 'insert channel id here' #to get the id enable developer mode in User Settings then right click the channel and click 'Copy ID'
+    role: 'insert role id to ping here' #to get the id enable developer mode in User Settings then right click the role and click 'Copy ID'
+    FieldTitles:
+      player: "Player"
+      request: "Helpop Request"
+
+#Chat BlackList Below
+Blacklist:
+  enabled: true
+  playermessage: '&cYou are not allowed to use that word!'
+  notifystaff: true
+  alreadyexists: '&8[&bStaffTools&8]&c Error! This word is already on the blacklist!'
+  doesntexist: '&8[&bStaffTools&8]&c Error! This word is not on the blacklist!'
+  added_successfully: '&8[&bStaffTools&8]&6 You have successfully added &b%word%&6 to the chat blacklist!'
+  removed_successfully: '&8[&bStaffTools&8]&6 You have successfully removed &b%word%&6 from  the chat blacklist!'
+  staffmessage: '&8[&bStaffTools&8]&c %player% tried to use the blacklisted word &b%word%&c!'
+  WordExists: "&b%word% &6Is blacklisted!"
+  WordNotExists: "&b%word% &6Is not blacklisted!"
+  words:
+    - 'nigger'
+    - 'fuck'
+
+#Slowmode Command Below
+Slowmode:
+  enabled: true
+  slow: 0 #Current chat slow, can also be changed thru in-game
+  current_slow: '&8[&bStaffTools&8]&6 The current chat cooldown is %slow%'
+  slowmode_already_disabled: '&8[&bStaffTools&8]&c Error! SlowMode is already disabled!'
+  slowmode_disabled: '&8[&bStaffTools&8]&6 You have successfully disabled SlowMode'
+  slowmode_enabled: '&8[&bStaffTools&8]&6 You have successfully enabled SlowMode with a &4%slow%s &6cooldown'
+  slowmode_disabled_broadcast: '&4&lNotice! SlowMode has been disabled by Staff!'
+  slowmode_enabled_broadcast: '&4&lNotice! SlowMode has been enabled by Staff with a &c&l%slow%s &4&lcooldown'
+  slowmode_player_error: '&8[&bStaffTools&8] &cSlowMode is enabled! Please wait &4%timeremaining%&c more seconds!'
+
+#CommandSpy Command Below
+Commandspy:
+  enabled: true
+  cspy_enabled_others: '&8[&bStaffTools&8] &6Successfully enabled CommandSpy for &b%player%&6!'
+  cspy_disabled_others: '&8[&bStaffTools&8] &6Successfully disabled CommandSpy for &b%player%&6!'
+  cspy_enabled: '&8[&bStaffTools&8]&6 Successfully enabled CommandSpy!'
+  cspy_disabled: '&8[&bStaffTools&8]&6 Successfully disabled CommandSpy!'
+  alreadyImmune: "&8[&bStaffTools&8]&b %target% &cIs already immune to commandspy!"
+  alreadyNotImmune: "&8[&bStaffTools&8]&b %target% &cIs already not immune to commandspy!"
+  successImmune: "&8[&bStaffTools&8]&6 Successfully set &b%target% &6as immune!"
+  successDisableImmune: "&8[&bStaffTools&8]&6 Successfully removed &b%target% &6from immune list!"
+  cspy: '&6%player% &c&l -> &7 %command%'
+
+#StaffCommandSpy Feature Below
+StaffCommandSpy:
+  enabled: false
+  MainChannel: "insert channel id here" #to get the id enable developer mode in User Settings then right click the channel and click 'Copy ID'
+  Message: "[%currenttime%] %player% is executing command: `%command%`"
+  Blacklist: #Commands in this list won't be sent in discord
+    - "examplecommand"
+  PrivateChanneling: false
+  PrivateChannels: #Key should the user's UUID and then the channel value below it should the channel id. See example below
+    example-uuid:
+      Channel: "insert channel id here"
+
+#SilentJoin Command Below
+Silentjoin:
+  enabled: true
+  sj_enabled_others: '&8[&bStaffTools&8] &6Successfully enabled SilentJoin for &b%player%&6!'
+  sj_disabled_others: '&8[&bStaffTools&8] &6Successfully disabled SilentJoin for &b%player%&6!'
+  joined_on_silent: '&8[&bStaffTools&8] &6You have joined on SilentJoin!'
+  sj_enabled: '&8[&bStaffTools&8]&6 Successfully enabled SilentJoin!'
+  sj_disabled: '&8[&bStaffTools&8]&6 Successfully disabled SilentJoin!'
+  join: '&8[&e%player%&7 has joined on SilentJoin&8]'
+  quit: '&8[&e%player%&7 has quit on SilentQuit&8]'
+
+#ClearChat Command Below
+Clearchat:
+  enabled: true
+  chat_cleared_global: '&8[&bStaffTools&8]&6 You have successfully cleared the global chat!'
+  chat_cleared_broadcast: '&4&lNotice! Chat has been cleared by Staff!'
+  chat_cleared: '&8[&bStaffTools&8] &6Successfully cleared &b%player%&6 chat!'
+  chat_cleared_player: '&c&lNotice! Your chat has been cleared!'
+
+#RandomTP command Below
+RandomTP:
+  enabled: true
+  notenoughplayers: '&8[&bStaffTools&8] &cError! Not enough non-staff players online to teleport to!'
+  teleported: '&8[&bStaffTools&8]&6 Successfully teleported to &b%player%&6!'
+
+#Reload Command Below
+Reload:
+  reloaded: '&8[&bStaffTools&8]&6 Successfully reloaded StaffTools!'
+  reloading: '&8[&bStaffTools&8]&6 Reloading StaffTools!'
+
+#Inspect Command Below
+Inspect:
+  enabled: true
+  success: '&8[&bStaffTools&8]&6 Inspecting &b%player%&6!'
+
+#StaffLogin Below
+Stafflogin:
+  enabled: true
+  login: '&8[&bStaffTools&8]&c Please login using /login (password)!'
+  choose_pass: '&8[&bStaffTools&8]&c You are not registered! Please register using /register (password)!'
+  registered: '&8[&bStaffTools&8]&6 Success! You have been registered!'
+  already_registered: '&8[&bStaffTools&8]&c Error! You are already registered!'
+  logged: '&8[&bStaffTools&8]&6 Success! You have logged in!'
+  already_logged: '&8[&bStaffTools&8]&c Error! You are already logged in!'
+  incorrect_password: '&8[&bStaffTools&8]&c Error! Incorrect password!'
+  notstaff: '&8[&bStaffTools&8]&c Error! %target% is not staff!'
+  reset: '&8[&bStaffTools&8]&c Notice! Your staff password has been reset!'
+  reset_others: '&8[&bStaffTools&8]&6 You have successfully reset %target% password'
+  bypassed: '&8[&bStaffTools&8]&6 You have logged in automatically due to having the bypass permission!'
+
+#LoginAnnounce Below
+LoginAnnounce:
+  enabled: true
+  announceStaff: false
+  announcePublic: true
+  announcement: '&7[&6STAFF&7] &4Staff member &c%player%&4 has logged in!'
+  announceStaffQuit: false
+  announcePublicQuit: true
+  announcementQuit: '&7[&6STAFF&7] &4Staff member &c%player%&4 has logged out!'
+
+#Punishments Below
+Punishments:
+  enabled: false
+  notify_ban:
+    - '&a---------------------'
+    - '&bBanned &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bBanned By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_tempban:
+    - '&a---------------------'
+    - '&bBanned &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bBanned By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bFor &8» &7%endsin%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_unban:
+    - '&a---------------------'
+    - '&bUnbanned &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bUnbanned By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_mute:
+    - '&a---------------------'
+    - '&bMuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bMuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_mute_player:
+    - '&a---------------------'
+    - '&bMuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bMuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_tempmute:
+    - '&a---------------------'
+    - '&bMuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bMuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bFor &8» &7%endsin%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_tempmute_player:
+    - '&a---------------------'
+    - '&bMuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bMuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bFor &8» &7%endsin%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_unmute:
+    - '&a---------------------'
+    - '&bUnmuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bUnmuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_unmute_player:
+    - '&a---------------------'
+    - '&bUnmuted &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bUnmuted By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_kick:
+    - '&a---------------------'
+    - '&bKicked &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bKicked By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_warning:
+    - '&a---------------------'
+    - '&bWarned &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bWarned By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  notify_warning_player:
+    - '&a---------------------'
+    - '&bWarned &8» &7%target%'
+    - '&bReason &8» &7%reason%'
+    - '&bWarned By &8» &7%player%'
+    - '&bTime &8» &7%time%'
+    - '&bSilent &8» &7%silent%'
+    - '&a---------------------'
+  BanScreen:
+    - "&b&lStaffTools &8&l➤ &7You have been Banned!!"
+    - ""
+    - "&bReason &8» &7%reason%"
+    - "&bBy &8» &7%player%"
+    - "&bFor &8» &7%for%"
+    - "&bTime &8» &7%time%"
+  KickScreen:
+    - "&b&lStaffTools &8&l➤ &7You have been Kicked!!"
+    - ""
+    - "&bReason &8» &7%reason%"
+    - "&bBy &8» &7%player%"
+    - "&bTime &8» &7%time%"
+  blacklistedCommands:
+    - "tpa"
+    - "msg"
+  alreadyBanned: '&b%target%&c Is already banned!'
+  alreadyMuted: '&b%target%&c Is already muted!'
+  notBanned: '&b%target%&c Is not banned!'
+  notMuted: '&b%target%&c Is not muted!'
+  mutedTriedChat: '&8[&bStaffTools&8]&c You are muted and cannot speak! You were muted by &b%by%&c on &b%time% &cfor &b%reason%&c! &cYour mute has &b%expires% &cleft!'
+  muteOver: '&8[&bStaffTools&8]&6 Your mute is over! You may now speak again! Stay nice :)'
+  nameCannotBeNull: '&cError! Name cannot be empty!'
+  playerDoesntExist: '&cError! &b%target% &cdoesnt exist!'
+  clearhistory_success: '&8[&bStaffTools&8]&6 Successfully cleared &b%target% &6history!'
+  DiscordSRV:
+    enabled: false
+    BanRole: "Insert Role ID"
+    MuteRole: "Insert Role ID"
+    WarnRole: "Insert Role ID"
+  WarningExpiry:
+    enabled: false
+    time: 30 #In days
+  WarningAutoBan:
+    enabled: false
+    amount: 3
+    command: "stafftools:ban %player% You have exceeded the maximum warnings allowed for a players"
+
+#Revive messages and settings below
+Revive:
+  enabled: true
+  reviveMessage: "&6You have been revived! Use &b/revive claim&6 to get your items! &4Beware though! Once you close the GUI you will not be able to reclaim your items!"
+  successMessage: "&6Successfully revived &b%target%&6!"
+  notRevivedMessage: "&cYou have not been revived!"
+  cantRevive: "&cYou may not revive &b%target%&c!"
+  takeItems: "&6You have opened the revive inventory and you are able to take the items prior to your last death! &4&lOnce you close this inventory you will not be able to reopen it!"
+  gui:
+    title: "&aRevival Items"
+  timer:
+    enabled: true
+    time: 10 # IN MINUTES
+
+#Mention messages and settings below
+Mention:
+  enabled: true
+  toggledOff: "&6Successfully toggled off mentions!"
+  toggledOn: "&6Successfully toggled on mentions!"
+  ping: "&6Successfully pinged &b%target%&6!"
+  pinged: "&5You have been pinged by &b%player%&5!"
+  cooldowntime: 15
+  cooldown: "&cYour mention did not work since you're on cooldown! You have &b%cooldown%&c more seconds left until you can mention again!"
+  color: "DARK_PURPLE" # See all colors here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/ChatColor.html
+  pingSound: ENTITY_EXPERIENCE_ORB_PICKUP
+  pingVolume: 3
+  pingPitch: 1
+
+#Aliases system messages and settings below
+Aliases:
+  enabled: false
+  aliases: # Format: {`command`:`alias`} ### A certain alias can only work for one command but one command can have multiple aliases
+    - "ExampleCommand:ExampleAlias"
+  Remove: "&6You have successfully removed the alias &b%alias%&6!"
+  Add: "&6You have successfully added the alias &b%alias%&6 to the command &b%command%&6!"
+  DoesntExist: "&cCouldn't find an alias by the name &b%alias%&c!"
+  GetCommand: "&6The command for the alias &b%alias%&6 is &b%command%&6!"
+  ListHeader: "&b-=-=-=-=-&6Aliases list&b-=-=-=-=-"
+  ListEntry: "&6Alias: &b%alias% &7- &6Command: &b%command%"
+
+#StaffMode Messages and UI Below
+Staffmode:
+  enabled: true
+  booleans:
+    #If this is true the player in staffmode will teleport back to the position they started StaffMode at.
+    teleport-back-on-ending: false
+    allow_damage: false
+    disable_on_worldchange: false #If this is true staffmode will automatically disable when changing worlds.
+    blacklist_commands: false # If this is true then the list below named `BlacklistedCommands` will be blocked while in StaffMode.
+    custom-commands: false #If this is true then each of the items below will use the command in its field command (if one exists) instead of doing what it was coded to do.
+    vanish-on-command: true #If this is false then you won't vanish automatically when turning on staffmode or unvanish automatically when turning it off.
+  staffmode_disabled: '&8[&bStaffTools&8]&6 Successfully disabled StaffMode!'
+  staffmode_enabled: '&8[&bStaffTools&8]&6 Successfully enabled StaffMode!'
+  staffmode_disabled_others: '&8[&bStaffTools&8]&6 Successfully disabled StaffMode for &b%player%&6!'
+  staffmode_enabled_others: '&8[&bStaffTools&8]&6 Successfully enabled StaffMode for &b%player%&6!'
+  BlacklistedCommand: "&8[&bStaffTools&8]&c That command  may not be used while in StaffMode!"
+  BlacklistedCommands:
+    - "ah"
+  randomtp:
+    material: BLAZE_ROD
+    data: 0
+    slot: 0
+    displayname: '&3RandomTP'
+    lore:
+      - '&aTeleport to a random non-staff player!'
+      - ''
+      - '&7(Click to RandomTP)'
+    command: "null"
+  inspect:
+    material: BOOK
+    data: 0
+    slot: 1
+    displayname: '&3Inspect'
+    lore:
+      - '&aInspect Players inventories'
+      - ''
+      - '&7(Click on a player to Inspect them)'
+    command: "null"
+  mover:
+    material: COMPASS
+    data: 0
+    slot: 2
+    displayname: '&3Mover'
+    lore:
+      - '&aTeleport and launch through walls!'
+      - ''
+      - '&7(Click in wanted direction to Teleport)'
+    messages:
+      teleported: '&aSuccessfully teleported!'
+      unreachable: '&cNo block in sight (or too far)!'
+    command: "null"
+  vanish:
+    material: LIME_DYE
+    data: 10
+    slot: 8
+    displayname: '&3Vanish'
+    lore:
+      - '&aToggle Vanish!'
+      - ''
+      - '&7(Click to toggle Vanish)'
+    toggled:
+      material: GRAY_DYE
+      amount: 1
+      displayname: '&3Vanish'
+      data: 8
+    command: "null"
+  fly:
+    material: FEATHER
+    data: 0
+    slot: 7
+    displayname: '&3Flight'
+    lore:
+      - '&aToggle Flight!'
+      - ''
+      - '&7(Click to toggle Flight)'
+    messages:
+      enabled: '&8[&bStaffTools&8]&6 Successfully enabled flight!'
+      disabled: '&8[&bStaffTools&8]&6 Successfully disabled flight!'
+    command: "null"
+  cps:
+    material: GOLDEN_AXE
+    data: 0
+    slot: 5
+    displayname: '&3CPS Test'
+    lore:
+      - "&aTest players' CPS"
+      - ""
+      - "&7(Click on a player to test them)"
+    messages:
+      AlreadyTesting: "&cYou cannot test two players at once."
+      AlreadyTested: "&b%name% &cIs currently being tested by someone else."
+      Complete: "&b%name%'s &6CPS Test has completed with the following results: &b%hits% &6clicks total and &b%hitsps% &6clicks per second!"
+      Testing: "&6CPS testing &b%name%&6!"
+    command: "null"
+  freeze:
+    material: DIAMOND_HOE
+    data: 0
+    slot: 3
+    displayname: '&3Freeze'
+    lore:
+      - '&aFreezes players!'
+      - ''
+      - '&7(Click on a player to Freeze them)'
+    command: "null"
+  staff:
+    material: PAPER
+    data: 0
+    slot: 6
+    displayname: '&3Staff GUI'
+    lore:
+      - '&aOpen Staff GUI'
+      - ''
+      - '&7(Click to open Staff GUI)'
+    command: "null"
+
+#Staffmenu UI Below
+Staffmenu:
+  randomtp:
+    material: BLAZE_ROD
+    data: 0
+    displayname: '&aRandomTP'
+    lore:
+      - '&2Teleport to a random non-staff player!'
+      - ''
+      - '&7(Click to RandomTP)'
+  clearchat:
+    material: BOOK
+    data: 0
+    displayname: '&aClearChat'
+    lore:
+      - '&2Clears chat for all players online!'
+      - ''
+      - '&7(Click to ClearChat!)'
+  reports:
+    material: PAPER
+    data: 0
+    displayname: '&aReports'
+    lore:
+      - '&2Opens the Reports GUI'
+      - ''
+      - '&7(Click to open the Reports GUI!)'
+  commandspy:
+    material: ENDER_CHEST
+    data: 0
+    displayname: '&aCommandSpy'
+    lore:
+      - '&2Toggles CommandSpy!'
+      - ''
+      - '&7(Click to toggle CommandSpy!)'
+  silentjoin:
+    material: IRON_BARS
+    data: 0
+    displayname: '&aSilentJoin'
+    lore:
+      - '&2Toggles SilentJoin!'
+      - ''
+      - '&7(Click to toggle SilentJoin!)'
+  slowmode:
+    material: SOUL_SAND
+    data: 0
+    displayname: '&aSlowMode'
+    lore:
+      - '&2Toggles SlowMode!'
+      - ''
+      - '&7(Click to toggle SlowMode!)'
+  freezechat:
+    material: ICE
+    data: 0
+    displayname: '&aFreezeChat'
+    lore:
+      - '&2Toggles FreezeChat!'
+      - ''
+      - '&7(Click to toggle FreezeChat!)'
+  vanish:
+    material: BARRIER
+    data: 0
+    displayname: '&aVanish'
+    lore:
+      - '&2Toggles Vanish!'
+      - ''
+      - '&7(Click to toggle Vanish!)'
+  staffmode:
+    material: GOLDEN_AXE
+    data: 0
+    displayname: '&aStaffmode'
+    lore:
+      - '&2Toggles Staffmode!'
+      - ''
+      - '&7(Click to toggle Staffmode!)'
+  gamemode:
+    material: GRASS_BLOCK
+    data: 0
+    displayname: '&aGamemode'
+    lore:
+      - '&2Toggles Gamemode between Spectator and Survival!'
+      - ''
+      - '&7(Click to toggle Gamemode!)'

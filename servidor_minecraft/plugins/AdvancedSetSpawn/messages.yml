@@ -1,0 +1,9 @@
+Messages:
+  Console-Sender: '&cYou Are Not Player!'
+  Set-Spawn: '&aSpawn Set Succes!'
+  Spawn-Teleport: '&bTeleported To Spawn.'
+  Spawn-No-Set: '&cSpawn Is Not Set!'
+  Spawn-Already-Set: '&eSpawn Already Is Set!'
+  Reload: '&aReload Succes!'
+  Spawn-Reset: '&aSpawn Has Been Deleted.'
+  No-Permission: '&cYou Need &e%permission% &cPermission To Use This!'
