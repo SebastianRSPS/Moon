@@ -2,7 +2,10 @@ panels:
   panel-1:
     perm: default
     rows: 5
-    title: '&8Generated panel-1'
+    title: '&8Warps'
+    commands:
+    - Warp
+    register_command: true
     empty: BLACK_STAINED_GLASS_PANE
     item:
       '0':
@@ -28,7 +31,10 @@ panels:
       '11':
         material: GRASS_BLOCK
         stack: 1
-        name: ''
+        name: '&aWorld'
+        left_click_commands:
+        - '[player] betterrtp world world'
+   
       '12':
         material: SOUL_SAND
         stack: 1

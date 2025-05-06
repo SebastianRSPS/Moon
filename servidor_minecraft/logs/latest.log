@@ -466,3 +466,224 @@ Download at https://www.spigotmc.org/resources/inventoryrollbackplus-1-8-1-16-x.
 [02:17:18] [Server thread/INFO]: 73x1 issued server command: /cpg 5
 [02:18:23] [Server thread/INFO]: 73x1 issued server command: /cpg 5
 [02:18:40] [Server thread/INFO]: 73x1 issued server command: /cpg 5
+[02:20:44] [Server thread/INFO]: 73x1 issued server command: /cp panel 1
+[02:20:46] [Server thread/INFO]: 73x1 issued server command: /cp 1
+[02:20:50] [Server thread/INFO]: 73x1 issued server command: /cp panel-1
+[02:21:23] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:21:25] [Server thread/INFO]: 73x1 issued server command: /cp panel-1
+[02:21:36] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:21:37] [Server thread/INFO]: 73x1 issued server command: /cp panel-1
+[02:22:22] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:22:24] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:24:09] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:24:12] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:25:12] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:25:14] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:27:37] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:27:37] [Server thread/ERROR]: Cannot load plugins/CommandPanels/panels/panel-1.yml
+org.bukkit.configuration.InvalidConfigurationException: unacceptable code point '' (0x8F) special characters are not allowed
+in "'reader'", position 713
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.fileNamesFromDirectory(CommandPanels.java:435) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.reloadPanelFiles(CommandPanels.java:452) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.commands.Commandpanelsreload.onCommand(Commandpanelsreload.java:38) ~[CommandPanels.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.dispatchCommand(CraftServer.java:929) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.4.jar:git-Paper-550]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.4.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:322) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:306) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2297) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2257) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1342) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1319) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1312) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1290) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1178) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.yaml.snakeyaml.reader.ReaderException: special characters are not allowed
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:204) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:169) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:164) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:119) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1229) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:345) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:235) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:175) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:159) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:559) ~[snakeyaml-1.33.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[02:27:37] [Server thread/INFO]: [CommandPanels] Error in: panel-1.yml
+[02:27:40] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:28:12] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:28:12] [Server thread/ERROR]: Cannot load plugins/CommandPanels/panels/panel-1.yml
+org.bukkit.configuration.InvalidConfigurationException: unacceptable code point '' (0x8F) special characters are not allowed
+in "'reader'", position 713
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.fileNamesFromDirectory(CommandPanels.java:435) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.reloadPanelFiles(CommandPanels.java:452) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.commands.Commandpanelsreload.onCommand(Commandpanelsreload.java:38) ~[CommandPanels.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.dispatchCommand(CraftServer.java:929) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.4.jar:git-Paper-550]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.4.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:322) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:306) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2297) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2257) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1342) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1319) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1312) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1290) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1178) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.yaml.snakeyaml.reader.ReaderException: special characters are not allowed
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:204) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:169) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:164) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:119) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1229) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:345) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:235) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:175) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:159) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:559) ~[snakeyaml-1.33.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[02:28:12] [Server thread/INFO]: [CommandPanels] Error in: panel-1.yml
+[02:28:14] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:29:26] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:29:26] [Server thread/ERROR]: Cannot load plugins/CommandPanels/panels/panel-1.yml
+org.bukkit.configuration.InvalidConfigurationException: unacceptable code point '' (0x8F) special characters are not allowed
+in "'reader'", position 891
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.fileNamesFromDirectory(CommandPanels.java:435) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.reloadPanelFiles(CommandPanels.java:452) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.commands.Commandpanelsreload.onCommand(Commandpanelsreload.java:38) ~[CommandPanels.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.dispatchCommand(CraftServer.java:929) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.4.jar:git-Paper-550]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.4.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:322) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:306) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2297) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2257) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1342) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1319) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1312) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1290) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1178) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.yaml.snakeyaml.reader.ReaderException: special characters are not allowed
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:204) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:169) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:164) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:119) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1229) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:345) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:235) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:175) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:159) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:559) ~[snakeyaml-1.33.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[02:29:26] [Server thread/INFO]: [CommandPanels] Error in: panel-1.yml
+[02:29:28] [Server thread/INFO]: 73x1 issued server command: /warp
+[02:29:50] [Server thread/INFO]: 73x1 issued server command: /cpr
+[02:29:50] [Server thread/ERROR]: Cannot load plugins/CommandPanels/panels/panel-1.yml
+org.bukkit.configuration.InvalidConfigurationException: unacceptable code point '' (0x8F) special characters are not allowed
+in "'reader'", position 713
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.fileNamesFromDirectory(CommandPanels.java:435) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.CommandPanels.reloadPanelFiles(CommandPanels.java:452) ~[CommandPanels.jar:?]
+	at me.rockyhawk.commandpanels.commands.Commandpanelsreload.onCommand(Commandpanelsreload.java:38) ~[CommandPanels.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R3.CraftServer.dispatchCommand(CraftServer.java:929) ~[paper-1.19.4.jar:git-Paper-550]
+	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.4.jar:git-Paper-550]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.4.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:322) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:306) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2297) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2257) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1342) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:197) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1319) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1312) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1290) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1178) ~[paper-1.19.4.jar:git-Paper-550]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-550]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: org.yaml.snakeyaml.reader.ReaderException: special characters are not allowed
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:204) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:169) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:164) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:119) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1229) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:345) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:263) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:235) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:185) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:175) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:159) ~[snakeyaml-1.33.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:559) ~[snakeyaml-1.33.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[02:29:50] [Server thread/INFO]: [CommandPanels] Error in: panel-1.yml
+[02:29:51] [Server thread/INFO]: 73x1 issued server command: /warp
